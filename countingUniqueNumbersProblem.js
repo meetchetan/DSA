@@ -32,10 +32,12 @@ let countUniqueNumber = (array) => {
       }
     }
     return i + 1;
-  }else{
-    return "Error: Array is empty"
+  } else {
+    return "Error: Array is empty";
   }
 };
 
 let res = countUniqueNumber([1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8]);
 console.log(res);
+
+// time complexity = 0(n) i.e linear
