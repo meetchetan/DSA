@@ -13,19 +13,19 @@ let isAnagram = (str1, str2) => {
   let counter = {};
   for (let letter of str1) {
     counter[letter] = (counter[letter] || 0) + 1;
-    console.log(counter[letter]);
   }
+  console.log(counter);
   for (let items of str2) {
     if (!counter[items]) {
       return false + ", strings are not Anagram";
     }
     counter[items] = counter[items] - 1;
+    console.log(counter);
   }
-  console.log(counter);
   return true + ", strings are Anagram";
 };
 
-let res = isAnagram("hello", "hlleo");
+let res = isAnagram("hello", "llleo");
 console.log(res);
 
 // o(n) linear time complexity
